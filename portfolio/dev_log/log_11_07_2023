@@ -1,0 +1,19 @@
+# Development Log
+
+## 2023-11-07
+
+### Updates
+
+I did minor work today just attempted to get started with something. Using chatGPT and the reacts quick start guide I started up react and tailwind. I ran the following commands:
+```
+npx create-react-app my-project
+cd my-project
+```
+```
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
+Small progress but progress non-the-less.
+
+*Signed by: Rylan Cox*
