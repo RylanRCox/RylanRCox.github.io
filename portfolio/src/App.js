@@ -7,7 +7,7 @@ import ContactMe from './Components/ContactMe.js';
 
 function App() {
   return (
-    <body class = "bg-slate-800">
+    <body class = "bg-slate-100 font-mono">
       <Navbar />
       <Introduction />
       <AboutMe />
