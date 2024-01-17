@@ -7,7 +7,7 @@ const Grid = ({items}) => {
     return (
         <div class = " relative flex items-center text-center flex-col justify-center bg-violet-400 w-3/5 rounded-2xl drop-shadow-md p-5 m-5">
             <div class = "border-b-4 border-dashed mb-10">
-                <h1 class=" text-5xl font-extrabold">Languages, Frameworks, & Environments</h1>
+                <h1 class=" text-5xl font-extrabold">Languages, Frameworkss, & Environments</h1>
             </div>
             <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
                 {items.map((items, index) => (
