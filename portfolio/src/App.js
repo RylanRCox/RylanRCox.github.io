@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Navbar from './Components/Navbar.js';
 import Introduction from './Components/Introduction.js';
 import AboutMe from './Components/AboutMe.js';
