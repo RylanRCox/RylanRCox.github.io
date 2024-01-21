@@ -22,7 +22,7 @@ const AboutMe = () => {
             <div class="flex-grow flex flex-col items-center justify-center text-2xl font-semibold text-white pt-20">
                 <div class="flex items-center text-center flex-col justify-center bg-violet-400 w-3/5 rounded-2xl drop-shadow-md p-5 px-7 m-5">
                     <div class = "border-b-4 border-dashed">
-                        <h1 class=" text-6xl font-extrabold">About Me</h1>
+                        <h1 class="text-6xl font-extrabold">About Me</h1>
                     </div>
                     <div class = "">
                         <p class="mt-5 transition-transform transform hover:scale-105">I'm from Kelowna, Canada and have recently finished my Bachelors of Science majoring in Computer Science at the University of British Columbia. </p>
