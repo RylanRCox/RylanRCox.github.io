@@ -1,5 +1,3 @@
-
-
 const ContactMe = () => {
     return (
         <div id="ContactMe" class="w-full bg-violet-900 h-screen flex flex-col justify-center items-center text-center flex-grow">
@@ -7,7 +5,7 @@ const ContactMe = () => {
                 <h1 class="text-6xl font-extrabold text-white">Contact Me</h1>
             </div>
             <div class = "w-5/12 flex justify-center bg-slate-100 rounded-xl drop-shadow-md p-5">
-                <form class = "w-full flex-col space-y-4">
+                <form class = "w-full flex-col space-y-4" action="https://formspree.io/f/mgegoooj" method="post">
                     <div class = "flex flex-col text-start">
                         <label class = "font-semibold" for="name">Name:</label>
                         <input class = "h-11 bg-slate-300 rounded-s p-2" type="text" id="name" name="name" placeholder="Enter Your Name" />
