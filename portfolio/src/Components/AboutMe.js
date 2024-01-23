@@ -18,9 +18,9 @@ const AboutMe = () => {
     ];
 
     return (
-        <div id="AboutMe" class="w-full h-screen flex flex-col justify-between items-center text-center">
+        <div id="AboutMe" class="w-full flex flex-col justify-between items-center text-center">
             <div class="flex-grow flex flex-col items-center justify-center text-2xl font-semibold text-white pt-20">
-                <div class="flex items-center text-center flex-col justify-center bg-violet-400 w-3/5 rounded-2xl drop-shadow-md p-5 px-7 m-5">
+                <div class="flex items-center text-center flex-col justify-center bg-violet-400 w-3/5 font-normal rounded-2xl drop-shadow-md p-5 px-7 m-5">
                     <div class = "border-b-4 border-dashed">
                         <h1 class="text-6xl font-extrabold">About Me</h1>
                     </div>
@@ -31,7 +31,7 @@ const AboutMe = () => {
                         <p class="mt-5 transition-transform transform hover:scale-105">I've done multiple projects for both school and for work during my co-op at Interior Health. I have a passion for human computer interaction and machine learning. </p>
                     </div>
                     <div class = "">
-                        <p class="mt-5 transition-transform transform hover:scale-105">I am familiar with multiple language but majority of my more recent work has been using POSTGRES and Javascript. </p>
+                        <p class="mt-5 transition-transform transform hover:scale-105">I am familiar with multiple language but majority of my more recent work has been using PostgreSQL and Javascript. </p>
                     </div>
                 </div>
                 <SkillsGrid items = {mySkills}/>

@@ -1,28 +1,30 @@
-import { useState } from 'react';
+
 
 const ProjectsGrid = ({items}) => {
-    const [hoverSkill, setHoverSkill] = useState(null);
-    const hoveredItem = items.find(item => item.skill === hoverSkill);
     
     return (
-        <div class = "relative flex items-center text-center flex-col justify-center bg-violet-400 w-3/5 rounded-2xl drop-shadow-md p-5 m-5">
-            <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
+        <div class = "relative flex flex-col justify-center items-center">
+            <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {items.map((items, index) => (
-                    <li 
-                        key={index} 
-                        className="flex-grow bg-zinc-300 bg-opacity-50 mx-2 py-2 px-2 rounded-xl drop-shadow-lg transition-transform transform hover:scale-110"
-                        onMouseEnter={() => setHoverSkill(items.project)}
-                        onMouseLeave={() => setHoverSkill(null)}
-                    >
-                        {items.skill}
+                    <li key={index} class="flex flex-col bg-violet-400 rounded-2xl drop-shadow-md px-1 p-5">
+                        <h3 class="text-2xl text-center mb-2">{items.project}</h3>
+                        <div class="w-full h-full flex flex-row justify-between">
+                            <div class="flex-1 flex flex-col justify-start text-start bg-zinc-300 bg-opacity-50 mx-2 p-2 rounded-xl drop-shadow-lg"> 
+                                    <p class="text-base font-normal text-start">{items.description}</p>
+                            </div>
+                            <div class="flex-2 w-1/4 ml-1"> 
+                                <ul class="flex flex-col items-end w-full">
+                                    {items.skills.map((skill, index) => (
+                                        <li key={index} class="bg-zinc-300 bg-opacity-50 mx-2 my-1 px-2 rounded-xl drop-shadow-lg w-full">
+                                            <p class="text-base font-normal">{skill}</p>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div> 
                     </li>
                 ))}
             </ol>
-            {hoverSkill && (
-                <div className = "absolute left-full top-0 w-1/4 ml-4 bg-violet-400 p-4 text-lg rounded-xl drop-shadow-lg z-40">
-                    {hoveredItem ? hoveredItem.description : ''}
-                </div>
-            )}
         </div>
     );
 };

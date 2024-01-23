@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+const fluid = require('tailwindcss-fluid');
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -6,5 +8,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+  ],
 }

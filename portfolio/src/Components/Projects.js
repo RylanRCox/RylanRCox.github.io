@@ -11,7 +11,7 @@ const Projects = () => {
         },
         {
             project: 'Chat Forum',
-            description: 'A Reddit-inspired chat forum with threaded comments and live updating feeds. Required full stack development, using a XAMPP stack, SQL database, PHP backend, and JavaScript frontend utilizing AJAX.  This was designed for a web development course.',
+            description: 'A Reddit-inspired chat forum with threaded comments and live updating feeds. Required full stack development, using a XAMPP stack, SQL database, PHP backend, and JavaScript frontend utilizing AJAX.  This was designed for a Web Development course.',
             skills: ['JavaScript', 'PHP', 'HTML', 'MySQL', 'Project Management'],
             link: 'https://github.com/RylanRCox/360Project'
         },
@@ -29,7 +29,7 @@ const Projects = () => {
         },
         {
             project: 'Learning Calendar',
-            description: 'A calendar that uses machine learning techniques to determine a user’s preferences and set notifications accordingly.  This was designed for a machine learning course.',
+            description: 'A calendar that uses machine learning techniques to determine a user’s preferences and set notifications accordingly.  This was designed for a Machine Learning course.',
             skills: ['Python', 'MATLAB'],
             link: 'https://github.com/RylanRCox/329-Learning-Calendar'
         },
@@ -54,10 +54,10 @@ const Projects = () => {
     ];
 
     return (
-        <div id="Projects" class="w-full bg-slate-300 h-screen flex flex-col justify-between items-center text-center">
-            <div class="flex-grow flex items-center justify-center">
-                <div class="flex items-center text-center flex-col justify-center">
-                    <h1 class="font-mono text-3xl font-extrabold text-white mt-5 transition-transform transform hover:scale-110">My Projects</h1>
+        <div id="Projects" class="w-full bg-slate-300 flex flex-col justify-between items-center text-center">
+            <div class="w-11/12 flex-grow flex flex-col items-center justify-center text-2xl font-semibold text-white pt-24">
+                <div class="pb-5">
+                    <h1 class="text-6xl font-extrabold">My Projects</h1>
                 </div>
                 <ProjectsGrid items = {myProjects}/>
             </div>

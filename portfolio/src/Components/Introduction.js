@@ -9,7 +9,7 @@ const Introduction = () => {
                         <h1 class="font-mono text-7xl font-extrabold text-white transition-transform transform hover:scale-110">Welcome!</h1>
                     </div>
                     <div>
-                        <h1 class="font-mono text-3xl font-extrabold text-white mt-5 transition-transform transform hover:scale-110">My name is Rylan and I am a Software Developer.</h1>
+                        <h1 class="font-mono text-3xl font-extrabold text-white mt-5 transition-transform transform hover:scale-110">My name is Rylan and I am a Developer.</h1>
                     </div>
                 </div>
             </div>
