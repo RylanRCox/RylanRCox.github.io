@@ -16,27 +16,21 @@ const AboutMe = () => {
         {skill: 'PHP', description: 'PHP was the backend language I used for my first web development course. We used it to create a simple website.'}, 
         {skill: 'R', description: 'When focusing on Data Science, R was the language I used. I used it for my Machine Learning course.'}
     ];
-
+    
     return (
-        <div id="AboutMe" class="w-full flex flex-col justify-between items-center text-center">
-            <div class="flex-grow flex flex-col items-center justify-center text-2xl font-semibold text-white pt-20">
-                <div class="flex items-center text-center flex-col justify-center bg-violet-400 w-3/5 font-normal rounded-2xl drop-shadow-md p-5 px-7 m-5">
-                    <div class = "border-b-4 border-dashed">
-                        <h1 class="text-6xl font-extrabold">About Me</h1>
+        <div id="AboutMe" className="w-full flex flex-col items-center text-center">
+            <div className="flex-grow flex flex-col items-center justify-center text-lg md:text-2xl font-semibold text-white pt-10 md:pt-20">
+                <div className="flex flex-col items-center justify-center bg-violet-400 w-full md:w-3/5 font-normal rounded-2xl drop-shadow-md p-5 m-5">
+                    <div className="border-b-4 border-dashed">
+                        <h1 className="text-4xl md:text-6xl font-extrabold">About Me</h1>
                     </div>
-                    <div class = "">
-                        <p class="mt-5 transition-transform transform hover:scale-105">I'm from Kelowna, Canada and have recently finished my Bachelors of Science majoring in Computer Science at the University of British Columbia. </p>
-                    </div>
-                    <div class = "">
-                        <p class="mt-5 transition-transform transform hover:scale-105">I've done multiple projects for both school and for work during my co-op at Interior Health. I have a passion for human computer interaction and machine learning. </p>
-                    </div>
-                    <div class = "">
-                        <p class="mt-5 transition-transform transform hover:scale-105">I am familiar with multiple language but majority of my more recent work has been using PostgreSQL and Javascript. </p>
-                    </div>
+                    <p className="mt-5 transition-transform transform hover:scale-105">I'm from Kelowna, Canada and have recently finished my Bachelors of Science majoring in Computer Science at the University of British Columbia.</p>
+                    <p className="mt-5 transition-transform transform hover:scale-105">I've done multiple projects for both school and for work during my co-op at Interior Health. I have a passion for human computer interaction and machine learning.</p>
+                    <p className="mt-5 transition-transform transform hover:scale-105">I am familiar with multiple language but majority of my more recent work has been using PostgreSQL and Javascript.</p>
                 </div>
-                <SkillsGrid items = {mySkills}/>
+                <SkillsGrid items={mySkills}/>
             </div>
-            <a href = "#Projects"><DownArrow /></a>
+            <a href="#Projects"><DownArrow /></a>
         </div>
     );
 };

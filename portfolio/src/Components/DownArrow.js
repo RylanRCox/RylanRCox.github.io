@@ -1,11 +1,11 @@
 import { FaArrowDown } from 'react-icons/fa';
 
-const downArrow = () => {
+const DownArrow = () => {
     return (
-      <div className="text-7xl text-violet-400 flex mb-2 transition-transform transform hover:scale-110 transition-transform hover:-translate-y-2">
-        <FaArrowDown />
-      </div>
+        <div className="flex justify-center items-center my-2 transition-transform transform hover:scale-110 hover:-translate-y-2">
+            <FaArrowDown className="text-4xl md:text-7xl text-violet-400" />
+        </div>
     );
-  };
-  
-  export default downArrow;
+};
+
+export default DownArrow;

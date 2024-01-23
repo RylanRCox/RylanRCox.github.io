@@ -54,14 +54,14 @@ const Projects = () => {
     ];
 
     return (
-        <div id="Projects" class="w-full bg-slate-300 flex flex-col justify-between items-center text-center">
-            <div class="w-11/12 flex-grow flex flex-col items-center justify-center text-2xl font-semibold text-white pt-24">
-                <div class="pb-5">
-                    <h1 class="text-6xl font-extrabold">My Projects</h1>
+        <div id="Projects" className="w-full bg-slate-300 flex flex-col items-center text-center">
+            <div className="w-full md:w-11/12 flex-grow flex flex-col items-center justify-center text-xl md:text-2xl font-semibold text-white pt-12 md:pt-24">
+                <div className="pb-5">
+                    <h1 className="text-4xl md:text-6xl font-extrabold">My Projects</h1>
                 </div>
-                <ProjectsGrid items = {myProjects}/>
+                <ProjectsGrid items={myProjects}/>
             </div>
-            <a href = "#ContactMe"><DownArrow /></a>
+            <a href="#ContactMe"><DownArrow /></a>
         </div>
     );
 };

@@ -1,22 +1,19 @@
-
-
 const ProjectsGrid = ({items}) => {
-    
     return (
-        <div class = "relative flex flex-col justify-center items-center">
-            <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                {items.map((items, index) => (
-                    <li key={index} class="flex flex-col bg-violet-400 rounded-2xl drop-shadow-md px-1 p-5">
-                        <h3 class="text-2xl text-center mb-2">{items.project}</h3>
-                        <div class="w-full h-full flex flex-row justify-between">
-                            <div class="flex-1 flex flex-col justify-start text-start bg-zinc-300 bg-opacity-50 mx-2 p-2 rounded-xl drop-shadow-lg"> 
-                                    <p class="text-base font-normal text-start">{items.description}</p>
+        <div className="relative flex flex-col justify-center items-center">
+            <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {items.map((item, index) => (
+                    <li key={index} className="bg-violet-400 rounded-2xl drop-shadow-md p-5">
+                        <h3 className="text-xl md:text-2xl text-center mb-4">{item.project}</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <div className="md:col-span-3 bg-zinc-300 bg-opacity-50 p-2 rounded-xl drop-shadow-lg">
+                                <p className="text-sm text-left md:text-base font-normal">{item.description}</p>
                             </div>
-                            <div class="flex-2 w-1/4 ml-1"> 
-                                <ul class="flex flex-col items-end w-full">
-                                    {items.skills.map((skill, index) => (
-                                        <li key={index} class="bg-zinc-300 bg-opacity-50 mx-2 my-1 px-2 rounded-xl drop-shadow-lg w-full">
-                                            <p class="text-base font-normal">{skill}</p>
+                            <div className="md:col-span-1"> 
+                                <ul className="flex flex-col items-start w-full">
+                                    {item.skills.map((skill, skillIndex) => (
+                                        <li key={skillIndex} className="bg-zinc-300 bg-opacity-50 my-1 px-2 rounded-xl drop-shadow-lg w-full">
+                                            <p className="text-sm md:text-base font-normal">{skill}</p>
                                         </li>
                                     ))}
                                 </ul>
@@ -28,6 +25,5 @@ const ProjectsGrid = ({items}) => {
         </div>
     );
 };
-  
+
 export default ProjectsGrid;
-  
