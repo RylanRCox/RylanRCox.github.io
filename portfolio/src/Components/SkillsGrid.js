@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Grid = ({items}) => {
+const SkillsGrid = ({items}) => {
     const [hoverSkill, setHoverSkill] = useState(null);
     const hoveredItem = items.find(item => item.skill === hoverSkill);
     
@@ -30,5 +30,5 @@ const Grid = ({items}) => {
     );
 };
   
-export default Grid;
+export default SkillsGrid;
   

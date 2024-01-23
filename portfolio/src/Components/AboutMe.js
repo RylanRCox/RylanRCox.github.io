@@ -1,5 +1,5 @@
 import DownArrow from './DownArrow.js';
-import Grid from './Grid.js';
+import SkillsGrid from './SkillsGrid.js';
 
 const AboutMe = () => {
     const mySkills = [
@@ -34,7 +34,7 @@ const AboutMe = () => {
                         <p class="mt-5 transition-transform transform hover:scale-105">I am familiar with multiple language but majority of my more recent work has been using POSTGRES and Javascript. </p>
                     </div>
                 </div>
-                <Grid items = {mySkills}/>
+                <SkillsGrid items = {mySkills}/>
             </div>
             <a href = "#Projects"><DownArrow /></a>
         </div>
