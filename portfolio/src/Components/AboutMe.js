@@ -24,9 +24,9 @@ const AboutMe = () => {
                     <div className="border-b-4 border-dashed">
                         <h1 className="text-4xl md:text-6xl font-extrabold">About Me</h1>
                     </div>
-                    <p className="mt-5 transition-transform transform hover:scale-105">I'm from Kelowna, Canada and have recently finished my Bachelors of Science majoring in Computer Science at the University of British Columbia.</p>
-                    <p className="mt-5 transition-transform transform hover:scale-105">I've done multiple projects for both school and for work during my co-op at Interior Health. I have a passion for human computer interaction and machine learning.</p>
-                    <p className="mt-5 transition-transform transform hover:scale-105">I am familiar with multiple language but majority of my more recent work has been using PostgreSQL and Javascript.</p>
+                    <p className="mt-5 transition-transform transform hover:scale-105">From Kelowna, Canada, I am a proud alumnus of UBC Okanagan, where I recently completed my Bachelor of Science in Computer Science. </p>
+                    <p className="mt-5 transition-transform transform hover:scale-105">I've had the opportunity to work on a diverse range of projects, both academically and professionally during my co-op at Interior Health. I'm particularly passionate about human-computer interaction and machine learning, and I'm always eager to explore these areas further in my professional journey.</p>
+                    <p className="mt-5 transition-transform transform hover:scale-105">I've dabbled in various programming languages, but lately, I've been focusing mostly on PostgreSQL and Javascript. They've been my go-to tools for recent projects.</p>
                 </div>
                 <SkillsGrid items={mySkills}/>
             </div>
