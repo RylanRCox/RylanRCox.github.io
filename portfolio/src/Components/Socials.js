@@ -3,17 +3,19 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Socials = () => {
     const iconSize = 36;
-    const githubUrl = "https://github.com/RylanRCox"; // Replace with your GitHub URL
-    const linkedinUrl = "https://www.linkedin.com/in/rylancox/"; // Replace with your LinkedIn URL
+    const githubUrl = "https://github.com/RylanRCox"; 
+    const linkedinUrl = "https://www.linkedin.com/in/rylancox/";
 
     return (
-        <div className="flex flex-col justify-between bg-violet-500 text-white p-4 fixed left-0 top-1/2 transform -translate-y-1/2 font-semibold text-xl z-50">
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="mb-4">
-                <FaGithub size={iconSize} />
-            </a>
-            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={iconSize} />
-            </a>
+        <div className="fixed left-0 md:top-1/2 transform md:-translate-y-1/2 z-50">
+            <div className="bg-violet-500 text-white p-4 flex md:flex-col justify-center md:items-start w-full md:w-4/5">
+                <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="block mb-2 md:mb-2 md:mr-4">
+                    <FaGithub size={iconSize} />
+                </a>
+                <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="block">
+                    <FaLinkedin size={iconSize} />
+                </a>
+            </div>
         </div>
     );
 };
