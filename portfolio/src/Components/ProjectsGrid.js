@@ -13,7 +13,7 @@ const ProjectsGrid = ({items}) => {
                                 <ul className="flex flex-col items-start w-full">
                                     {item.skills.map((skill, skillIndex) => (
                                         <li key={skillIndex} className="bg-zinc-300 bg-opacity-50 my-1 px-2 rounded-xl drop-shadow-lg w-full">
-                                            <p className="text-sm md:text-base font-normal">{skill}</p>
+                                            <p className="text-sm md:text-base font-normal transition-transform transform hover:scale-105">{skill}</p>
                                         </li>
                                     ))}
                                 </ul>

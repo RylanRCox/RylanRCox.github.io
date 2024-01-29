@@ -54,14 +54,15 @@ const Projects = () => {
     ];
 
     return (
-        <div id="Projects" className="w-full bg-slate-300 flex flex-col items-center text-center">
-            <div className="w-full md:w-11/12 flex-grow flex flex-col items-center justify-center text-xl md:text-2xl font-semibold text-white pt-12 md:pt-24">
-                <div className="pb-5">
-                    <h1 className="text-4xl md:text-6xl font-extrabold">My Projects</h1>
+        <div id="Projects" className="w-full bg-slate-100 flex flex-col items-center text-center">
+            <div className="w-full md:w-11/12 flex-grow flex flex-col items-center justify-center text-xl md:text-2xl font-semibold text-white pt-12 pb-12 md:pt-24">
+                <div className="bg-violet-400 rounded-2xl drop-shadow-md p-5 m-5">
+                    <div className="border-b-4 border-dashed pb-1">
+                        <h1 className="text-4xl md:text-6xl font-extrabold">My Projects</h1>
+                    </div>
                 </div>
                 <ProjectsGrid items={myProjects}/>
             </div>
-            <a href="#ContactMe"><DownArrow /></a>
         </div>
     );
 };

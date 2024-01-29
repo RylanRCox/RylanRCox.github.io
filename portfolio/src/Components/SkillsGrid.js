@@ -2,7 +2,7 @@ const SkillsGrid = ({items}) => {
     
     return (
         <div className="relative flex items-center text-center flex-col justify-center bg-violet-400 rounded-2xl drop-shadow-md p-5 m-5">
-            <div className="border-b-4 border-dashed mb-10">
+            <div className="border-b-4 border-dashed mb-10 pb-1">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">Languages, Frameworks, & Environments</h1>
             </div>
             <ol className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">

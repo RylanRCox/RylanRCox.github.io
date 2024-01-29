@@ -21,7 +21,7 @@ const AboutMe = () => {
         <div id="AboutMe" className="w-full flex flex-col items-center text-center">
             <div className="flex-grow flex flex-col items-center justify-center text-lg md:text-2xl font-semibold text-white pt-10 md:pt-20">
                 <div className="flex flex-col items-center justify-center bg-violet-400 w-full md:w-3/5 font-normal rounded-2xl drop-shadow-md p-5 m-5">
-                    <div className="border-b-4 border-dashed">
+                    <div className="border-b-4 border-dashed pb-1">
                         <h1 className="text-4xl md:text-6xl font-extrabold">About Me</h1>
                     </div>
                     <p className="mt-5 transition-transform transform hover:scale-105">From Kelowna, Canada, I am a proud alumnus of UBC Okanagan, where I recently completed my Bachelor of Science in Computer Science. </p>
@@ -30,7 +30,6 @@ const AboutMe = () => {
                 </div>
                 <SkillsGrid items={mySkills}/>
             </div>
-            <a href="#Projects"><DownArrow /></a>
         </div>
     );
 };
