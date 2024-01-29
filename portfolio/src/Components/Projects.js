@@ -1,4 +1,3 @@
-import DownArrow from './DownArrow.js';
 import ProjectsGrid from './ProjectsGrid.js';
 
 const Projects = () => {

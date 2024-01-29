@@ -1,4 +1,3 @@
-import DownArrow from './DownArrow.js';
 import SkillsGrid from './SkillsGrid.js';
 
 const AboutMe = () => {
